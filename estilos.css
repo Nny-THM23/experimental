@@ -1,0 +1,126 @@
+/* Fuente general */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #518ccb, #6f125b);
+  color: #333;
+  text-align: center;
+  padding: 40px;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* Botón modo */
+.boton.modo {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+}
+
+/* Contenedor principal */
+.contenedor {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: aparecer 1s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Imagen de perfil */
+.perfil {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Botones */
+.boton {
+  display: inline-block;
+  background: #4dabf7;
+  color: #fff;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.boton:hover {
+  background: #2a7ae2;
+}
+
+/* Secciones */
+.seccion {
+  background-color: #fff;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: aparecer 1.5s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Redes sociales */
+.redes {
+  list-style: none;
+  padding: 0;
+}
+
+.redes li {
+  margin: 10px 0;
+}
+
+.redes a {
+  text-decoration: none;
+  color: #4dabf7;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.redes a:hover {
+  color: #2a7ae2;
+}
+
+/* Animación */
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🌒 Modo oscuro */
+body.oscuro {
+  background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+  color: #f0f0f0;
+}
+
+body.oscuro .contenedor,
+body.oscuro .seccion {
+  background-color: #333;
+  color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+body.oscuro .boton {
+  background: #555;
+  color: #fff;
+}
+
+body.oscuro .boton:hover {
+  background: #777;
+}
+
+body.oscuro .redes a {
+  color: #90cdf4;
+}

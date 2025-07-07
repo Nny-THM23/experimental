@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mi pagina web </title>
+  <link rel="stylesheet" href="estilos.css">
+
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Íconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Botón modo oscuro -->
+  <button id="modo-toggle" class="boton modo">Modo oscuro</button>
+
+  <div class="contenedor">
+    <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="perfil">
+    <h1>¡Hola! Soy Nny</h1>
+    <p>Estoy aprendiendo desarrollo web con HTML, CSS y Visual Studio Code 🚀</p>
+
+    <ul class="redes">
+  <li>
+    <a href="https://instagram.com/jonny_thm?igsh=MWZnc2trNjdiaHpmOQ==" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/@NnyTHM23" target="_blank">
+      <i class="fab fa-youtube"></i> YouTube
+    </a>
+  </li>
+</ul>
+
+
+    <a href="#sobremi" class="boton">Sobre mí</a>
+  </div>
+
+  <!-- Sección Sobre mí -->
+  <section id="sobremi" class="seccion">
+    <h2>Sobre mí</h2>
+    <p>Me apasiona el diseño web, la tecnología y el aprendizaje continuo. Esto es un experimento.</p>
+  </section>
+
+  <!-- Sección Habilidades -->
+  <section class="seccion">
+    <h2>Mis habilidades</h2>
+    <ul>
+      <li>✅ HTML5 y CSS3</li>
+      <li>✅ VS Code</li>
+      <li>✅ Modo oscuro 😎</li>
+    </ul>
+  </section>
+
+  <!-- Script Modo Oscuro -->
+  <script>
+    const boton = document.getElementById('modo-toggle');
+    boton.addEventListener('click', () => {
+      document.body.classList.toggle('oscuro');
+      boton.textContent = document.body.classList.contains('oscuro') ? 'Modo claro' : 'Modo oscuro';
+    });
+  </script>
+
+</body>
+</html>
