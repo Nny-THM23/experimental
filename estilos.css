@@ -124,3 +124,36 @@ body.oscuro .boton:hover {
 body.oscuro .redes a {
   color: #90cdf4;
 }
+/* Estilos generales (escritorio y móvil) */
+
+/* Para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  .contenedor, .seccion {
+    max-width: 100%;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: none;
+  }
+
+  .perfil {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .boton {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .redes li {
+    margin: 5px 0;
+  }
+}
